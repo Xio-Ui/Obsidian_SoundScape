@@ -98,46 +98,18 @@ nav a:hover{
     margin-left: 30px;
 }
 .banner_index img{
-    width: 70%;
-    height: auto;
-    mask-image: linear-gradient(black 80%, transparent);
-}
-
-/*section_artistas*/
-.s_artistas{
-    width: 90%;
-    max-width: 1000px;
-    margin: 1.6em auto;
-    background-color: rgba(73, 151, 253, 0.11) ;
-    padding: 20px;
-    border-radius: 10px;
-    
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
     display: flex;
-    flex-direction: column;
-    gap: 15PX;
-    
-}
-.s_artistas h1{
-    font-size: 3rem;
-    text-align: center;
-    padding: 10px;
-    margin-bottom: 15px;
-}
-.s_artistas div {
-background-color:rgba(73, 151, 253, 0.205) ;
-padding: 10px;
-border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    mask-image: linear-gradient(black 80%, transparent);
 
-display: flex;
-flex-direction: column;
-align-items: center;
 }
-
-
 
 /* Section2_cards */
 .container{
-    padding: 10px;
     display: flex;
     justify-content: space-around;
     border-radius: 10px;
@@ -149,16 +121,16 @@ align-items: center;
 }
 .card{
     background-color: rgba(129, 191, 250, 0.048);
+    padding: 20px;
+    text-align: start;
+    border-radius: 12px;
+    margin-top: 10px;
+    width: 100%;
 }
 .container h2{
     text-align: center;
-}
-
-.card{
-    padding: 30px;
-    text-align: center;
-    border-radius: 12px;
-
+    margin-top: 15px;
+    padding-top: 15px;
 }
 .container a{
     text-decoration: none;
@@ -191,8 +163,61 @@ align-items: center;
 }
 .section_index2 h4{
     color: rgba(73, 151, 253, 0.733);
+    margin-bottom: 15px;
+    padding-bottom: 15px;
 
 }
+
+/*section_artistas*/
+
+.s_artistas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    margin: 10em auto ;
+    gap: 10em;
+    
+}
+.card_a{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+
+}
+.card_a div{
+    margin-top: 40px;
+    width: 100%;
+    height: 400px;
+    align-items: center;
+}
+.card_a h2{
+    font-size: 2rem;
+    margin: 10px;
+    color:rgba(73, 151, 253, 0.733);
+    
+}
+.card_a p{
+    padding: 10px;
+    margin: 10px;
+    width: 100%;
+}
+.card_a h3{
+    padding: 15px;
+    font-size: 1rem;
+}
+.card_a ul{
+    padding: 25px;
+    margin: 15px;
+}
+.card_a img{
+    width: 50%;
+   height: 500px;
+   border-radius: 15px;
+   mask-image: linear-gradient(black 50%, transparent);
+}
+
+
 /* Contacto */
 .section_form{
     background-color: rgba(73, 151, 253, 0.452);
