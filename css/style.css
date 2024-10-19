@@ -34,7 +34,7 @@ header img{
 }
 /* Navegación */
 nav{
-    width: 25%;
+    width: 30%;
 }
 nav a{
     text-decoration: none;
@@ -64,7 +64,7 @@ nav a:hover{
     align-items: center;
 }
 .banner_index h1{
-    font-size: 7rem;
+    font-size: 6rem;
     text-shadow: 
     0 0 10px rgba(255, 255, 255, 0.7), 
     0 0 10px rgba(0, 255, 255, 0.8), 
@@ -99,7 +99,7 @@ nav a:hover{
 }
 .banner_index img{
     width: 100%;
-    height: 100vh;
+    height: 50%;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -116,7 +116,7 @@ nav a:hover{
     text-align: center;
 }
 .container div{
-    width: 20%;
+    width: 30%;
     justify-content: space-around;
 }
 .card{
@@ -181,7 +181,7 @@ container h2{
 .card_a{
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: start;
 
 }
 .card_a div{
@@ -215,7 +215,96 @@ container h2{
    mask-image: linear-gradient(black 50%, transparent);
    padding-bottom: 3em;
 }
+/* section_eventos */
+.section_eventos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 400px);
+    gap: 20px;
+    width: 80%;
+    margin: 1.5em auto;
+   
 
+    }
+.section_eventos div{
+        text-align: center;
+        border-radius: 15px;
+}
+.section_eventos h2{
+        padding-left: 10px;
+        margin-left: 15px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        font-size: 2rem;
+        height: 80%;
+}
+.evento_1{
+    background-image: url(../img/evento_img1.jpg);
+}
+.evento_2{
+    background-image: url(../img/evento_img2.webp);
+}
+.evento_3{
+    background-image: url(../img/evento_img3.avif);
+}
+.evento_4{
+    background-image: url(../img/evento_img4.jpg);
+}
+.evento_5{
+    background-image: url(../img/evento_img5.jpeg);
+}
+.evento_6{
+    background-image: url(../img/evento_img6.jpg);
+}
+/* Section_blog */
+.container_main_blog{
+    
+    margin: 3em 10em;
+    padding: 2em;
+    border-radius: 10px;
+}
+.container_main_blog h1{
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.introduccion_blog{
+    background-color:rgba(73, 151, 253, 0.479) ;
+    align-items: center;
+    padding: 1em;
+    border-radius: 10px;
+    margin-bottom: 3em;
+    text-align: justify;
+}
+.introduccion_blog h2{
+    text-align: center;
+    color: rgba(73, 151, 253, 0.719);
+    margin-bottom: 5px;
+}
+.artistas_blog h2{
+    font-size: 2rem;
+    margin-bottom: 1em;
+    color: rgba(73, 151, 253, 0.719);
+    padding-left: 20px;
+}
+.artistas_blog h3{
+    text-align: end;
+    padding: 1em;
+}
+.artistas_blog p{
+    width: 90%;
+    text-align: justify;
+    margin-bottom: 1em;
+    font-size: 1rem;
+    margin-left: 20px;
+}
+.artistas_blog h4{
+    margin: 1.5em;
+}
+.artistas_blog ul{
+    margin: 2em;
+}
 
 /* Contacto */
 .section_form{
@@ -328,25 +417,8 @@ margin-bottom: 5px;
     margin-top: 10px;
     
 }
-/* Eventos */
-.section_eventos{
-display: grid;
-grid-template-columns: repeat(3, 1fr);
-grid-template-rows: repeat(2, 400px);
-gap: 20px;
-}
-.section_eventos div{
-    text-align: center;
-}
-.section_eventos h2{
-    padding-left: 10px;
-    margin-left: 15px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    font-size: 2rem;
-    height: 80%;
-}
+
+
 
 /* Footer */
 footer{
@@ -416,16 +488,15 @@ width:90%;
     margin-top: 10px;
 }
 .banner_index img{
-    height: 400px;
+    height: 50%;
 }
 /* Section2_cards */
 .container{
     flex-direction: column;
+    align-items: center;
 }
 .container div{
-    width: 90%;
-    padding-left: 2em;
-    
+    width: 80%;
 }
 .card{
     font-size: 1rem;
@@ -480,17 +551,12 @@ width:90%;
 .card_a p{
     font-size: 0.9rem;
     margin-left: 5px;
-    text-align: justify;
 }
 .card_a ul{
     font-size: 0.9rem;
     margin-bottom: 2em;
 }
-.card_a1{
-    background: linear-gradient(0deg,rgba(73, 151, 253, 0.192), 80%, rgba(0, 0, 0, 0.116) );
-    padding-right: 10px;
-    border-radius: 10px;
-}
+
 
 
 /* Footer */
@@ -511,5 +577,119 @@ footer .logo{
     
 
 @media(min-width:501px) and (max-width:950px){
-     
+    header{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        
+    }
+    header img{
+     width: 80px;
+     margin: 10px;
+    }
+    nav{
+    width: 80%;
+    height: 90px;
+    }
+    .barra_nav{
+        margin: 0;
+        display: flex;
+        justify-content: space-around;
+        height: 50%;
+        align-items: center;
+        
+    }
+/* section1_bienvenida */
+    .banner_index{
+        display: flex;
+        flex-direction: column;
+    }
+    .banner_index h1{
+        font-size: 4rem;
+        margin-top: 1em;
+    }
+    .banner_index h2{
+        font-size: 1rem;
+    }
+    .banner_index h3{
+        font-size: 0.8rem;
+    }
+    .banner_index p{
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+    .banner_index img{
+        height: 50%;
+    }
+    /* Section2_cards */
+.container{
+    flex-direction: column;
+    align-items: center;
+}
+.container div{
+    width: 60%;
+    
+}
+.card{
+    font-size: 1rem;
+}
+.container h2{
+    font-size: 1rem;
+    margin-top: 2em;
+}
+/* Section3_index */
+.section_index2 h3{
+    font-size: 1rem;
+}
+.section_index2 p{
+    font-size: 1rem;
+}
+.section_index2 h4{
+    font-size: 1rem;
+    margin-top: 1em;
+}
+/*section_artistas*/
+.s_artistas{
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    
+}
+.card_a{
+    flex-direction: column;
+}
+.card_a div{
+    font-size: 1rem;
+    width: 90%;
+    height: 600px;
+   
+    
+
+    
+}
+.card_a h2{
+    font-size: 1rem;
+    text-align: center;
+}
+.card h3{
+    padding: 10px;
+}
+.card_a img{
+    width: 90%;
+    height: 500px;
+    
+}
+.card_a p{
+    font-size: 0.9rem;
+    margin-left: 5px;
+    text-align: justify;
+}
+.card_a ul{
+    font-size: 0.9rem;
+    
+}
+
+
+    
 }
