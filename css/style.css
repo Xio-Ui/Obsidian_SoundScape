@@ -241,21 +241,39 @@ container h2{
 }
 .evento_1{
     background-image: url(../img/evento_img1.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .evento_2{
     background-image: url(../img/evento_img2.webp);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .evento_3{
     background-image: url(../img/evento_img3.avif);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .evento_4{
     background-image: url(../img/evento_img4.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .evento_5{
     background-image: url(../img/evento_img5.jpeg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .evento_6{
     background-image: url(../img/evento_img6.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 /* Section_blog */
 .container_main_blog{
@@ -271,7 +289,6 @@ container h2{
 }
 .introduccion_blog{
     background-color:rgba(73, 151, 253, 0.479) ;
-    align-items: center;
     padding: 1em;
     border-radius: 10px;
     margin-bottom: 3em;
@@ -326,9 +343,10 @@ container h2{
     text-align: center;
 
     position: relative;
-    width: 90vh;
+    width: 100vh;
     max-width: 100%;
     min-height: 400px;
+    margin: 5em auto;
 }
 .contenedor_main_form{
     display: flex;
@@ -460,7 +478,6 @@ header img{
 }
 nav{
 width:90%;
-
 }
 .barra_nav{
     margin: 0;
@@ -531,7 +548,7 @@ width:90%;
 .card_a div{
     font-size: 1rem;
     width: 90%;
-    height: 600px;
+    height: 500px;
     margin:1em;
     
 }
@@ -543,9 +560,10 @@ width:90%;
     padding: 10px;
 }
 .card_a img{
-    width: 90%;
+    width: 100%;
     height: 500px;
-    margin-top: 3em;
+    margin-top: 4em;
+    align-items: center;
     
 }
 .card_a p{
@@ -554,25 +572,62 @@ width:90%;
 }
 .card_a ul{
     font-size: 0.9rem;
-    margin-bottom: 2em;
+    margin-bottom: 3em;
 }
 
-
-
+/* section blog */
+.container_main_blog{
+    margin: 5px;
+    font-size: 1rem;
+}
+.container_main_blog h1{
+    font-size: 1rem;
+}
+.introduccion_blog{
+    text-align: start;
+    background-color: black;
+}
+.introduccion_blog h2{
+    font: size 0.5rem;
+}
+.introduccion_blog p{
+    font-size: 1rem;
+    text-align: justify;
+}
+.artistas_blog h2{
+    font-size: 1rem;
+}
+.artistas_blog h3{
+font-size: 1rem;
+}
+.artistas_blog p{
+    font-size: 1rem;
+}
+/* eventos */
+.section_eventos{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 350px);
+}
+/* contacto */
+.contenedor_main{
+    margin: 6em auto;
+    width: 60vh;
+}
 /* Footer */
 footer{
     flex-direction: column;
-    padding: 8px;
+    padding: 2px;
 }
 footer img{
-    width: 30px;
+    width: 20px;
 }
 footer .logo{
-    width: 50px;
+    width: 40px;
 }
 .contendor_footer p{
-    font-size: 0.5rem
+    font-size: 1rem;
 }
+
 }
     
 
@@ -652,9 +707,9 @@ footer .logo{
 .s_artistas{
     flex-direction: column;
     align-items: center;
-    width: 100%;
-
-    
+    width: 100%;   
+    margin: 0;
+    padding: 0;
 }
 .card_a{
     flex-direction: column;
@@ -662,34 +717,51 @@ footer .logo{
 .card_a div{
     font-size: 1rem;
     width: 90%;
-    height: 600px;
-   
-    
-
-    
+    height: 400px; 
 }
 .card_a h2{
     font-size: 1rem;
     text-align: center;
 }
-.card h3{
+.card_a h3{
     padding: 10px;
+    margin-left: 3em;
 }
 .card_a img{
-    width: 90%;
-    height: 500px;
+    margin-top: 4em;
+    width: 100%;
+    height: 600px;
     
 }
 .card_a p{
     font-size: 0.9rem;
-    margin-left: 5px;
+    margin-left: 3em;
     text-align: justify;
 }
 .card_a ul{
     font-size: 0.9rem;
-    
+    margin-left: 3em;
+} 
+/* section_blog */
+.container_main_blog{
+    margin: 5px;
+    font-size: 1rem;
 }
-
-
-    
+.container_main_blog h1{
+    font-size: 1.5rem;
+}
+.introduccion_blog{
+    text-align: start;
+    background-color: black;
+}
+/* eventos */
+.section_eventos{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 400px);
+}
+/* contacto */
+.contenedor_main{
+    margin: 5em auto;
+    width: 70vh;
+}
 }
