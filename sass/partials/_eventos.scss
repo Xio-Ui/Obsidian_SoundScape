@@ -1,0 +1,75 @@
+
+/*section_eventos*/
+
+.section_eventos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 400px);
+    grid-template-areas: 
+    " evento_1 evento_2  evento_3"
+    " evento_4 evento_5 evento_6"
+    ;
+    gap: 20px;
+    width: 80%;
+    margin: 1.5em auto;
+    
+    div{
+        text-align: center;
+        border-radius: 15px;
+    }
+
+    h2{
+        padding-left: 10px;
+        margin-left: 15px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        font-size: 2rem;
+        height: 80%;   
+    }
+
+    .evento_1{
+        grid-area: evento_1;
+        background-image: url(../img/evento_img1.jpg);
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .evento_2{
+        grid-area:evento_2 ;
+        background-image: url(../img/evento_img2.webp);
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .evento_3{
+        grid-area: evento_3;
+        background-image: url(../img/evento_img3.avif);
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .evento_4{
+        grid-area:evento_4 ;
+        background-image: url(../img/evento_img4.jpg);
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .evento_5{
+        grid-area:evento_5 ;
+        background-image: url(../img/evento_img5.jpeg);
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .evento_6{
+        grid-area:evento_6 ;
+        background-image: url(../img/evento_img6.jpg);
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+}

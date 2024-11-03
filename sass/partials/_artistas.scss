@@ -1,0 +1,61 @@
+/*Section_artistas*/
+
+.s_artistas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    margin: 10em auto ;
+    gap: 10em;
+
+    h1{
+        font-size: 3rem;
+        text-align: center;
+        color: $color1;
+    }
+
+    .card_a{
+        display: flex;
+        flex-direction: row;
+        align-items: start; 
+
+        div{
+            margin-top: 40px;
+            width: 100%;
+            height: 400px;
+            align-items: center;  
+        }
+
+        h2{
+            font-size: 2rem;
+            margin: 10px;
+            color:$color1;
+            margin-left: 0.5em;
+        }
+
+        p{
+            padding: 10px;
+            margin: 10px;
+            width: 100%;
+            font-size: 1rem;
+            text-align: justify;
+        }
+
+        h3{
+            padding: 15px;
+            font-size: 1rem; 
+        }
+
+        ul{
+            padding: 25px;
+            margin: 15px;
+        }
+
+        img{
+            width: 50%;
+            height: 500px;
+            mask-image: linear-gradient(black 50%, transparent);
+            padding-bottom: 3em;
+        }
+    }
+}

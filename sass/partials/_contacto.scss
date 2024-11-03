@@ -1,0 +1,121 @@
+/*section_contacto*/
+.section_form{
+    
+    background: linear-gradient(0deg,rgba(73, 151, 253, 0.404), 50%, rgba(0, 0, 0, 0.116) );
+    padding-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .contenedor_main{
+        background-color: rgba(255, 255, 255, 0.226);
+        border: 4px solid rgba(255, 255, 255, 0.26);
+        border-radius: 20px;
+        padding: 20px;
+        box-shadow: 0 6PX 15PX rgba(255, 255, 255, 0.281);
+        text-align: center;
+    
+        position: relative;
+        width: 90vh;
+        max-width: 100%;
+        min-height: 400px;
+        margin: 5em;
+
+        form{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 0 40px;
+            height: 100%;
+        }
+        h1{
+            text-align: center;
+            color: rgba(73, 151, 253, 0.603) ;
+            font-weight: bold;
+            font-size: 2rem;
+        }
+
+        input{
+            background-color: rgba(0, 0, 0, 0.247) ;
+            color: white;
+            border: none;
+            margin: 8px;
+            padding:10px 15px ;
+            font-size: 1rem;
+            border-radius: 10px;
+            width: 100%;
+        }
+
+        .panel_1{
+            margin: 10px;
+
+            h2{
+                margin-bottom: 10px;
+                font-size: 1.5rem;
+            }
+    
+            p{
+                text-align: start;
+                margin-bottom: 5px;
+            }
+        }
+
+        button{
+            background-color: rgba(73, 151, 253, 0.603);
+            color: white;
+            padding: 10px 45px;
+            border-radius: 20px;
+            border: 1px solid transparent;
+            text-transform: uppercase;
+            margin-top: 15px; 
+
+            &:hover{
+                background-color: black;
+                color:$color1;
+                font-weight: bold;  
+            }
+        }
+    }
+
+    .container_form_Sing-in{
+        h2{
+            text-align: center;
+            color: rgba(73, 151, 253, 0.603) ;
+            padding: 15px;
+            font-weight: bold;
+            font-size: 2rem;
+        }
+
+        .panel_2{
+
+            h3{
+                margin-bottom: 10px;
+                font-size: 1.5rem; 
+            }
+            p{
+                text-align: start;
+                margin-bottom: 5px;
+            }
+        }
+
+        a{
+            text-decoration: none;
+            color: white;
+            display: block;
+            margin-top: 10px;
+            
+            &:hover{
+                color: rgba(0, 0, 0, 0.623);
+                text-decoration: underline;
+            }
+        }
+
+    }
+    
+    
+        
+}
+
+ 
