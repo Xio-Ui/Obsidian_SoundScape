@@ -297,6 +297,7 @@ footer .contenedor_footer img {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 400px);
+  grid-template-areas: " evento_1 evento_2  evento_3" " evento_4 evento_5 evento_6";
   gap: 20px;
   width: 80%;
   margin: 1.5em auto;
@@ -315,36 +316,42 @@ footer .contenedor_footer img {
   height: 80%;
 }
 .section_eventos .evento_1 {
+  grid-area: evento_1;
   background-image: url(../img/evento_img1.jpg);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .section_eventos .evento_2 {
+  grid-area: evento_2;
   background-image: url(../img/evento_img2.webp);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .section_eventos .evento_3 {
+  grid-area: evento_3;
   background-image: url(../img/evento_img3.avif);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .section_eventos .evento_4 {
+  grid-area: evento_4;
   background-image: url(../img/evento_img4.jpg);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .section_eventos .evento_5 {
+  grid-area: evento_5;
   background-image: url(../img/evento_img5.jpeg);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .section_eventos .evento_6 {
+  grid-area: evento_6;
   background-image: url(../img/evento_img6.jpg);
   background-position: center center;
   background-size: cover;
@@ -479,6 +486,7 @@ footer .contenedor_footer img {
   }
   .banner_index p {
     font-size: 1rem;
+    margin-left: 0.6em;
   }
   .banner_index img {
     height: 50%;
@@ -530,7 +538,7 @@ footer .contenedor_footer img {
   .s_artistas .card_a div {
     font-size: 1rem;
     width: 90%;
-    height: 500px;
+    height: 550px;
     margin: 1em;
   }
   .s_artistas .card_a div h2 {
@@ -588,10 +596,28 @@ footer .contenedor_footer img {
     width: 100%;
     margin-left: 0%;
   }
-  /*Section_eventos*/
   .section_eventos {
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 350px);
+    grid-template-rows: repeat(6, 250px);
+    grid-template-areas: "evento_1" "evento_2" "evento_3" "evento_4" "evento_5" "evento_6";
+  }
+  .section_eventos .evento_1 {
+    grid-area: evento_1;
+  }
+  .section_eventos .evento_2 {
+    grid-area: evento_2;
+  }
+  .section_eventos .evento_3 {
+    grid-area: evento_3;
+  }
+  .section_eventos .evento_4 {
+    grid-area: evento_4;
+  }
+  .section_eventos .evento_5 {
+    grid-area: evento_5;
+  }
+  .section_eventos .evento_6 {
+    grid-area: evento_6;
   }
   /*Section_contacto*/
   .section_form .contenedor_main {
@@ -619,7 +645,7 @@ footer .contenedor_footer img {
   }
 }
 /*Media para tablet*/
-@media (min-width: 501px) and (max-width: 950px) {
+@media (min-width: 501px) and (max-width: 951px) {
   header {
     display: flex;
   }
@@ -634,12 +660,181 @@ footer .contenedor_footer img {
     border: none;
     align-items: end;
   }
+  /* section1_bienvenida */
+  .banner_index {
+    display: flex;
+    flex-direction: column;
+  }
+  .banner_index h1 {
+    font-size: 4rem;
+    margin-top: 1em;
+  }
+  .banner_index h2 {
+    font-size: 2rem;
+  }
+  .banner_index h3 {
+    font-size: 1rem;
+  }
+  .banner_index p {
+    font-size: 1.3rem;
+    margin-top: 10px;
+  }
+  .banner_index img {
+    height: 50%;
+  }
+  /* Section2_cards */
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .container div {
+    width: 70%;
+    margin-left: 1em;
+  }
+  .container div h2 {
+    padding-top: 2em;
+    font-size: 1.5rem;
+  }
+  .container div p {
+    font-size: 1rem;
+  }
+  /*section3_index*/
+  .section_index2 h3 {
+    font-size: 1.5rem;
+  }
+  .section_index2 p {
+    font-size: 1rem;
+    margin: 1em;
+  }
+  .section_index2 h4 {
+    margin-top: 1em;
+    font-size: 1rem;
+  }
+  /*section_artistas*/
+  .s_artistas {
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    gap: 2em;
+  }
+  .s_artistas h1 {
+    font-size: 2rem;
+    margin-top: 1em;
+  }
+  .s_artistas .card_a {
+    flex-direction: column;
+    margin-top: 1em;
+  }
+  .s_artistas .card_a div {
+    font-size: 1rem;
+    width: 90%;
+    height: 550px;
+    margin-left: 2em;
+  }
+  .s_artistas .card_a div h2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .s_artistas .card_a div p {
+    font-size: 1rem;
+    margin-left: 5px;
+  }
+  .s_artistas .card_a div h3 {
+    padding: 10px;
+  }
+  .s_artistas .card_a div ul {
+    font-size: 1rem;
+    margin-bottom: 3em;
+  }
+  .s_artistas .card_a img {
+    height: 550px;
+    width: 100%;
+    margin-top: 4em;
+    align-items: center;
+  }
+  /*Section_blog*/
+  .container_main_blog {
+    margin: 5px;
+    font-size: 1rem;
+  }
+  .container_main_blog h1 {
+    font-size: 1.5rem;
+  }
+  .container_main_blog .introduccion_blog {
+    text-align: start;
+    background-color: black;
+  }
+  .container_main_blog .introduccion_blog h2 {
+    font-size: 2rem;
+  }
+  .container_main_blog .introduccion_blog p {
+    font-size: 1rem;
+    text-align: justify;
+  }
+  .artistas_blog {
+    width: 100%;
+  }
+  .artistas_blog h2 {
+    font-size: 1.5rem;
+  }
+  .artistas_blog h3 {
+    font-size: 1rem;
+  }
+  .artistas_blog p {
+    font-size: 1rem;
+    text-align: justify;
+    width: 100%;
+    margin-left: 0%;
+  }
+  /*Section_eventos*/
+  .section_eventos {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 350px);
+    grid-template-areas: "evento_1" "evento_2" "evento_3" "evento_4" "evento_5" "evento_6";
+  }
+  .section_eventos .evento_1 {
+    grid-area: evento_1;
+  }
+  .section_eventos .evento_2 {
+    grid-area: evento_2;
+  }
+  .section_eventos .evento_3 {
+    grid-area: evento_3;
+  }
+  .section_eventos .evento_4 {
+    grid-area: evento_4;
+  }
+  .section_eventos .evento_5 {
+    grid-area: evento_5;
+  }
+  .section_eventos .evento_6 {
+    grid-area: evento_6;
+  }
+  /*Section_contacto*/
+  .section_form .contenedor_main {
+    margin: 6em auto;
+    width: 60vh;
+  }
   /*footer*/
   footer {
     flex-direction: column;
     padding: 2px;
     background-color: rgba(73, 151, 253, 0.089);
   }
+  footer .logo {
+    width: 80px;
+    padding: 10px;
+  }
+  footer .contenedor_footer {
+    display: block;
+    font-size: 0.9rem;
+    padding-left: 1em;
+  }
+  footer .contenedor_footer img {
+    width: 30px;
+    margin-bottom: 1em;
+  }
 }
 
-/*# sourceMappingURL=estilocs.css.map */
+/*# sourceMappingURL=estilos.css.map */
