@@ -180,9 +180,9 @@
 
         .section_eventos{
             grid-template-columns: 1fr;
-            grid-template-rows: repeat(6, 250px);
+            grid-template-rows: 100px repeat(6, 300px);
             grid-template-areas: 
-    
+            "h1"
             "evento_1"
             "evento_2"
             "evento_3"
@@ -191,6 +191,10 @@
             "evento_6"
             
             ;
+            h1{
+                font-size: 1.5rem;
+                margin-bottom: 2px;
+            }
             .evento_1{
                 grid-area:evento_1 ;
             }
@@ -427,9 +431,9 @@
     /*Section_eventos*/
     .section_eventos{
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(6, 350px);
+        grid-template-rows: 100px repeat(6, 350px);
         grid-template-areas: 
-
+        "h1"
         "evento_1"
         "evento_2"
         "evento_3"
@@ -438,6 +442,10 @@
         "evento_6"
         
         ;
+        h1{
+            font-size: 2rem;
+            margin-bottom: 2px;
+        }
         .evento_1{
             grid-area:evento_1 ;
         }
